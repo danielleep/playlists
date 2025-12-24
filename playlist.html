@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links</title>
+
+  <style>
+    /* איפוס בסיסי */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      overflow: hidden; /* בלי גלילה */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+      /* רקע כחול כהה עם כמה גוונים */
+      background:
+        radial-gradient(circle at top left, #1b2a4e, transparent 60%),
+        radial-gradient(circle at bottom right, #0a1a3a, transparent 60%),
+        linear-gradient(180deg, #050b1e, #0b1f3d);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .btn {
+      height: 56px;
+      border-radius: 16px;
+      background: #b7dbff; /* תכלת פסטל */
+      color: #0a1a3a;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <a class="btn" href="https://open.spotify.com/playlist/0IN0aM6ftUuxFi7hjA54yr?si=NX05jLPrThSmlPC1Bv43oA&pi=ZeVU315sSzK2X" target="_blank">Spotify</a>
+    <a class="btn" href="https://music.apple.com/il/playlist/%D7%9E%D7%AA%D7%A7%D7%A8%D7%A8/pl.u-yZyVJG1uX49rEp" target="_blank">Apple Music</a>
+    <a class="btn" href="https://youtube.com/playlist?list=PLlPVZqDxKAz_D0evwDPJDpd3pdQ6WxJ90&si=mLZDvYU9kQhTvEI7" target="_blank">YouTube</a>
+  </div>
+</body>
+</html>
