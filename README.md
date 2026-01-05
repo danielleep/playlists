@@ -1,4 +1,4 @@
-# Playlist Links 🎧
+# Playlist Links 
 
 A simple, clean HTML page that groups a single playlist across multiple music platforms:
 Spotify, Apple Music, and YouTube.
